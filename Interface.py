@@ -3,7 +3,7 @@ import os
 import subprocess as sp
 import threading
 import time
-import Ip_Scaner
+import ipScanner
 
 # Class_funcshen
 class bcolors:
@@ -64,7 +64,7 @@ def Ip_Scan():
     while True:
         # status, result = sp.getstatusoutput("pwd")
         # os.system(result + '/Ip_Scaner.py')
-        a = Ip_Scaner
+        a = ipScanner
         a.Serch('172.20.6.0', '172.20.7.255')
         # Ip_Scaner.Serch('192.168.1.0', '192.168.1.255')
         time.sleep(15)
