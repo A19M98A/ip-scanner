@@ -1,4 +1,4 @@
 # ip-scanner
-> Run \n
- $ cd ip-scanner \n
+> Run
+ $ cd ip-scanner
  $ python3 Interface.py
