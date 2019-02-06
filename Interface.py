@@ -5,7 +5,6 @@ import threading
 import time
 import ipScanner
 
-# Class_funcshen
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -59,14 +58,10 @@ def Print():
         print('\033[91m    ▐\033[0m' + ip.center(18,' ') + tm.center(18,' ') + '\033[91m▐                                 ▐\033[0m')
     print('\033[91m    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\033[0m')
 
-# Print()
 def Ip_Scan():
     while True:
-        # status, result = sp.getstatusoutput("pwd")
-        # os.system(result + '/Ip_Scaner.py')
         a = ipScanner
         a.Serch('172.20.6.0', '172.20.7.255')
-        # Ip_Scaner.Serch('192.168.1.0', '192.168.1.255')
         time.sleep(15)
 
 processThread = threading.Thread(target = Ip_Scan)
